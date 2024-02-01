@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Jay</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Goal Tracker App</title>
+</head>
+<body>
+    <div id="loginPage">
+        <h2>Login</h2>
+        <input type="text" id="userNameInput" placeholder="Enter your name">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <div id="promptPage" class="hidden">
+        <h2>Did you accomplish your goals for today, <span id="userName"></span>?</h2>
+        <button onclick="logGoal(true)">Yes</button>
+        <button onclick="logGoal(false)">No</button>
+    </div>
+
+    <div id="leaderboardPage" class="hidden">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard"></ul>
+        <button onclick="returnToGoalSetPage()">Return to Goal Set Page</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
